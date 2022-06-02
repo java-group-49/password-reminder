@@ -3,7 +3,6 @@ import model.Record;
 import operations.RecordsOperations;
 import storage.ReceivingData;
 import storage.impl.DatabaseStorage;
-import storage.impl.LocalStorage;
 import util.ConsoleInteraction;
 
 import java.util.*;
@@ -22,7 +21,6 @@ public class Main {
         Record record;
 
         while (true) {
-
             do {
                 operation = ConsoleInteraction.getStringFromConsole("Enter desired operation (add/print/exit/update/get/remove)");
             } while (!possibleOperations.contains(operation.toUpperCase()));
